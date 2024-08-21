@@ -3,7 +3,7 @@ package com.aula.conjunta;
 public class Veiculo {
     //Atributos
     private String marca;
-    private int ano,mes,dia,hora;
+    private int ano;
     //Atributos
 
     //Set+Get
