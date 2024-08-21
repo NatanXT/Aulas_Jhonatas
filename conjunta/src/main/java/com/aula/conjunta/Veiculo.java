@@ -35,7 +35,7 @@ public class Veiculo {
     //Construtor
 
     //Metodos
-    public void acelerar(){
+    public void acelerar() {
         System.out.println(ano + marca + "O veiculo está acelerando");
     }
     //Metodos

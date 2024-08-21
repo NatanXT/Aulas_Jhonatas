@@ -14,9 +14,10 @@ public class Carro {
     public Carro() {
     }
 
-    public void acelerar(){
-        System.out.println( marca + modelo + ano + " acelerou");
+    public void acelerar() {
+        System.out.println(marca + modelo + ano + " acelerou");
     }
+
     public String getMarca() {
         return marca;
     }
