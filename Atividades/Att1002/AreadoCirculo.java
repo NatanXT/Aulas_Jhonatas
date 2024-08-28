@@ -19,5 +19,6 @@ public class AreadoCirculo {
         System.out.println("A="+ formattedArea);
         //Duas maneiras diferentes
         System.out.printf("A=%.4f%n",area);
+
     }
 }
