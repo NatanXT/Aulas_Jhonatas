@@ -4,14 +4,16 @@ import java.util.Scanner;
 
 public class AreadoCirculo {
     public static void main(String[] args) {
+        //Atributos
         double area, n , raio;
 
+        //Comunicação com usuario
         Scanner ScanRaio = new Scanner(System.in);
         System.out.println("Digite o Tamanho do Raio");
 
+        //Logica
         n = 3.14159;
         raio = ScanRaio.nextDouble();
-
         area = n*(raio*raio);
 
         //Criando uma forma de formatar as casas decimais
