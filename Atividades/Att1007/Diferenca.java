@@ -8,18 +8,16 @@ public class Diferenca {
         int A, B, C, D, Diferenca;
 
         //Comunicação com o Usuario
-        Scanner scannerA = new Scanner(System.in);
-        System.out.println("Digite o primeiro valor: ");
-        A = scannerA.nextInt();
-        Scanner scannerB = new Scanner(System.in);
-        System.out.println("Digite o segundo valor: ");
-        B = scannerB.nextInt();
-        Scanner scannerC = new Scanner(System.in);
-        System.out.println("Digite o terceiro valor: ");
-        C = scannerC.nextInt();
-        Scanner scannerD = new Scanner(System.in);
-        System.out.println("Digite o quarto valor: ");
-        D = scannerD.nextInt();
+        try (Scanner scan = new Scanner(System.in)){
+            System.out.println("Digite o primeiro valor: ");
+            A = scan.nextInt();
+            System.out.println("Digite o segundo valor: ");
+            B = scan.nextInt();
+            System.out.println("Digite o terceiro valor: ");
+            C = scan.nextInt();
+            System.out.println("Digite o quarto valor: ");
+            D = scan.nextInt();
+        }
 
         //Logica
         Diferenca = ((A * B)-(C * D));

@@ -9,12 +9,12 @@ public class Media1 {
         double pesoA = 3.5;
         double pesoB = 7.5;
         //Comunicação com o usuario
-        Scanner scannerA = new Scanner(System.in);
-        System.out.println("Digite a Primeira Nota: ");
-        A = scannerA.nextDouble();
-        Scanner scannerB = new Scanner(System.in);
-        System.out.println("Digite a Segunda Nota: ");
-        B = scannerB.nextDouble();
+        try (Scanner scan = new Scanner(System.in)){
+            System.out.println("Digite a Primeira Nota: ");
+            A = scan.nextDouble();
+            System.out.println("Digite a Segunda Nota: ");
+            B = scan.nextDouble();
+        }
         //Logica
         Media = ((A * pesoA) + (B * pesoB))/(pesoA + pesoB);
         //Resultado

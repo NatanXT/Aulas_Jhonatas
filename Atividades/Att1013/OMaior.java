@@ -8,20 +8,22 @@ public class OMaior {
         int A, B, C, maior;
 
         //Comunicação com o usuario
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Digite o primeiro valor: ");
-        A = scan.nextInt();
-        System.out.println("Digite o segundo valor: ");
-        B = scan.nextInt();
-        System.out.println("Digite o terceiro valor: ");
-        C = scan.nextInt();
+        try (Scanner scan = new Scanner(System.in))
+        {
+            System.out.println("Digite o primeiro valor: ");
+            A = scan.nextInt();
+            System.out.println("Digite o segundo valor: ");
+            B = scan.nextInt();
+            System.out.println("Digite o terceiro valor: ");
+            C = scan.nextInt();
+        }
 
         //Logica
-        if (A > B){
+        if (A >= B && A >= C) {
             maior = A;
-        }if (B > C){
+        } else if (B >= A && B >= C) {
             maior = B;
-        }else {
+        } else {
             maior = C;
         }
 

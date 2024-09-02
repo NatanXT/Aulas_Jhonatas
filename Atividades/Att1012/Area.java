@@ -9,13 +9,14 @@ public class Area {
         double triangulo, circulo, trapezio, quadrado, retangulo;
 
         //Comunicacao com usuario
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Digite o primeiro valor: ");
-        A = scan.nextDouble();
-        System.out.println("Digite o segundo valor: ");
-        B = scan.nextDouble();
-        System.out.println("Digite o terceiro valor: ");
-        C = scan.nextDouble();
+        try (Scanner scan = new Scanner(System.in)){
+            System.out.println("Digite o primeiro valor: ");
+            A = scan.nextDouble();
+            System.out.println("Digite o segundo valor: ");
+            B = scan.nextDouble();
+            System.out.println("Digite o terceiro valor: ");
+            C = scan.nextDouble();
+        }
 
         //Logica
         triangulo = ((0.5) * (A * C));

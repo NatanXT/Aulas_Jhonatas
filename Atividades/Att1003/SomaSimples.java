@@ -8,12 +8,12 @@ public class SomaSimples {
         int A,B, SOMA;
 
         //Comunicacao com o usuario
-        Scanner scannerA= new Scanner(System.in);
-        System.out.println("Digite o Valor de A : ");
-        A = scannerA.nextInt();
-        Scanner scannerB= new Scanner(System.in);
-        System.out.println("Digite o Valor de B : ");
-        B = scannerB.nextInt();
+        try (Scanner scanner= new Scanner(System.in)){
+            System.out.println("Digite o Valor de A : ");
+            A = scanner.nextInt();
+            System.out.println("Digite o Valor de B : ");
+            B = scanner.nextInt();
+        }
 
         //Logica
         SOMA = A+B;

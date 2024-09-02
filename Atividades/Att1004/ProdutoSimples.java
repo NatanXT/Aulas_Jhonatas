@@ -8,13 +8,13 @@ public class ProdutoSimples {
         int A,B,PROD;
 
         //Comunicação com usuario
-        Scanner scannerA = new Scanner(System.in);
-        System.out.println("Digite o valor: ");
-        A = scannerA.nextInt();
-        Scanner scannerB = new Scanner(System.in);
-        System.out.println("Digite o valor: ");
-        B = scannerB.nextInt();
-
+        try (Scanner scan = new Scanner(System.in)){
+            System.out.println("Digite o valor: ");
+            A = scan.nextInt();
+            System.out.println("Digite o valor: ");
+            B = scan.nextInt();
+        }
+        
         //Logica
         PROD = A*B;
 

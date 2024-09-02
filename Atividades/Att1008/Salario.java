@@ -9,13 +9,14 @@ public class Salario {
         double salario, valorHorasTrabalhadas;
 
         //Comunicação Usuario
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Digite o seu numero: ");
-        numero = scan.nextInt();
-        System.out.println("Digite a sua hora trabalhada: ");
-        horasTrabalhadas = scan.nextInt();
-        System.out.println("Digite o valor da sua hora trabalhada: ");
-        valorHorasTrabalhadas = scan.nextDouble();
+        try (Scanner scan = new Scanner(System.in)){
+            System.out.println("Digite o seu numero: ");
+            numero = scan.nextInt();
+            System.out.println("Digite a sua hora trabalhada: ");
+            horasTrabalhadas = scan.nextInt();
+            System.out.println("Digite o valor da sua hora trabalhada: ");
+            valorHorasTrabalhadas = scan.nextDouble();
+        }
 
         //Logica
         salario = (horasTrabalhadas * valorHorasTrabalhadas);

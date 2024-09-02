@@ -9,9 +9,10 @@ public class Esfera {
         double pi = 3.14159, volume;
 
         //Comunicacao com o usuario
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Digite o valor do raio: ");
-        raio = scan.nextInt();
+        try (Scanner scan = new Scanner(System.in)){
+            System.out.println("Digite o valor do raio: ");
+            raio = scan.nextInt();
+        }
 
         //Logica
 //      volume = ((4.0/3) * pi * ((raio * raio) * raio));
